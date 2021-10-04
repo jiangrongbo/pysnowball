@@ -1,4 +1,3 @@
-
 # finance
 finance_cash_flow_url = "https://stock.xueqiu.com/v5/stock/finance/cn/cash_flow.json?symbol="
 finance_indicator_url = "https://stock.xueqiu.com/v5/stock/finance/cn/indicator.json?symbol="
@@ -33,3 +32,15 @@ f10_indicator = "https://stock.xueqiu.com/v5/stock/f10/cn/indicator.json?symbol=
 # real time
 realtime_quote = "https://stock.xueqiu.com/v5/stock/realtime/quotec.json?symbol="
 realtime_pankou = "https://stock.xueqiu.com/v5/stock/realtime/pankou.json?symbol="
+
+# free 自选股
+create_free_item = "https://stock.xueqiu.com/v5/stock/portfolio/create.json?category=1&pnames="
+remove_free_item = "https://stock.xueqiu.com/v5/stock/portfolio/delete.json?pids="
+list_free_item = "https://stock.xueqiu.com/v5/stock/portfolio/list.json?category=1&system=1"
+batch_query_stock = "https://stock.xueqiu.com/v5/stock/optional/batch/quote.json"
+list_industries = "https://xueqiu.com/service/screener/industries?category=CN"
+add_stock_to_item = "https://stock.xueqiu.com/v5/stock/portfolio/stock/add.json"
+screener = "https://xueqiu.com/service/screener/screen"
+
+list_stock = 'https://xueqiu.com/service/v5/stock/screener/quote/list'
+list_free_stock = 'https://stock.xueqiu.com/v5/stock/portfolio/stock/list.json'
