@@ -10,7 +10,6 @@ pd.set_option('display.width', 5000)
 
 
 def show_df_data():
-    ball.set_token('xq_a_token=f8e9ce5454e5b3d58d5a981d1657177c72665885;')
     list_free_item_df = ball.list_free_item()
     list_free_item_df = list_free_item_df.query('name == "20210917KDJ"')
     print(list_free_item_df)

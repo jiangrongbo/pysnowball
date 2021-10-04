@@ -20,13 +20,11 @@ class StockTest(unittest.TestCase):
 
     def test_batch_query_stock(self):
         symbols = 'SH688027,SZ300363,SH603688,SZ300123,SZ300481,SH688226,SZ300040,SZ300830,SH600259,SH600468,SZ300260,SH688117,SZ300327,SH600490,SH603989,SZ002266,SH603993,SZ300082,SH603160,SH600610,SH603416,SZ002485,SZ300215,SH600667,SZ300638,SZ002706,SZ300972,SH601968,SH688536,SZ300835,SZ002508,SZ002959,SZ000550,SH688533,SZ002214,SH603633,SH688069,SH600460,SH601969,SH603088,SH603661,SZ300239,SH601236,SZ300595,SZ002645,SZ300625,SZ300722,SZ002860,SZ002759,SZ002155'
-        ball.set_token('xq_a_token=f8e9ce5454e5b3d58d5a981d1657177c72665885;')
         batch_query_stock_df = ball.batch_query_stock(symbols)
         print(batch_query_stock_df)
         pass
 
     def test_list_free_item(self):
-        ball.set_token('xq_a_token=f8e9ce5454e5b3d58d5a981d1657177c72665885;')
         print(ball.list_free_item())
 
     def test_list_free_stock(self):
@@ -47,7 +45,6 @@ class StockTest(unittest.TestCase):
         print(full_stock_info_df)
 
     def test_list_free_stock(self):
-        ball.set_token('xq_a_token=f8e9ce5454e5b3d58d5a981d1657177c72665885;')
         list_free_item_df = ball.list_free_item()
         list_free_item_df = list_free_item_df.query('name == "20210917KDJ"')
         print(list_free_item_df)

@@ -14,7 +14,6 @@ class ScreenerTest(unittest.TestCase):
         print(ball.list_industries())
 
     def test_screener(self):
-        ball.set_token('xq_a_token=f8e9ce5454e5b3d58d5a981d1657177c72665885;')
         screener_df = ball.screener()
         print(screener_df)
         # screener_df.to_csv('stock20210918.csv')
